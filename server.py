@@ -45,11 +45,11 @@ def predictTags():
     print("T",T)
     results=classifier.predict(T)
     results=multibin.inverse_transform(results)
-    tagarr=[]
+    tag_arr=[]
     for result in results[0]:
-        tagarr.append(result)
-    print(tagarr)
-    return (jsonify({"tags":tagarr}))
+        tag_arr.append(result)
+    print(tag_arr)
+    return (jsonify({"tags":tag_arr}))
 
 if __name__ == "__main__":
     app.run(debug=True)

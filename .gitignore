@@ -21,6 +21,7 @@ build/
 .idea/
 docs/_build/
 .vscode
+*.csv
 # Coverage reports
 htmlcov/
 .coverage
